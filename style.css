@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #213448;
+    padding-top: 50px;
+}
+#container_box{
+    width: 40vw;
+    min-height: 40vh;
+    max-height: 90vh;
+    background-color: #ECEFCA;
+    margin: 0 auto 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+#title{
+    padding: 20px 0;
+}
+#container_input{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    /* background-color: aqua; */
+}
+#container_input input{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+    border-width: 2px;
+    border-color: #007bff;
+    font-size: 14px;
+    outline: none;
+    padding: 0 30px;
+}
+#container_input button{
+    width: 20%;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#container_task{
+    width: 40vw;
+    height: auto;
+    list-style: none;
+    text-align: left;
+    padding: 0 65px;
+}
+#container_task li{
+    /* padding-bottom: 10px; */
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 40px;
+}
+#container_task li::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f111";
+    padding-right: 10px;
+}
+#container_task li.active{
+    text-decoration: line-through;
+}
+#container_task li.active::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    text-decoration: none;
+    content: "\f111";
+    padding-right: 10px;
+}
+#container_task li span{
+    width: 40px;
+    font-size: 18px;
+    text-align: center  ;
+    font-family: "Font Awesome 6 Free";
+    content: "\f057";
+    font-weight: 600;
+    float: right;
+    color: red;
+    border-radius: 50%;
+   
+}
+#container_task li span:hover{
+    background-color: lightgray;
+}
