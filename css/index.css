@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --bgcolor: #f6f6f6;
+    --success: #5594f1;
+    --danger: #f26e56;
+}
+body{
+    background-color: var(--bgcolor);
+}
+#body{
+    height: auto;
+    width: 50%;
+    margin: 40px auto;
+}
+#details{
+    width: fit-content;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+#details img{
+    height: 140px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px #c2c2c2;
+}
+#details p{
+    font-size: 16px;
+    color: #666666;
+}
+#nameDisplay{
+    font-weight: bolder;
+    font-size: 28px;
+}
+#toggleDiv{
+    padding: 10px 0;
+    /* background-color: #000b1b; */
+}
+#toggleTop, #toggleBottom{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px 0;
+    /* background-color: #666666; */
+}
+#allToggle{
+    background-color: green;
+}
+#comToggle{
+    background-color: var(--success);
+}
+#rejToggle{
+    background-color: var(--danger);
+}
+#logoutToggle{
+    background-color: #666666;
+}
+#comToggle, #rejToggle, #allToggle, #logoutToggle{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 15px 30px;
+    color: #fff;
+    cursor: pointer;
+    min-width: 200px;
+}
+#comToggle i, #rejToggle i, #allToggle i, #logoutToggle i{
+    font-size: 24px;
+}
+#comToggle p, #rejToggle p, #allToggle p{
+    font-size: 12px;
+}
+#tasksList, #comTask, #rejTask{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#tasksListP, #comTaskP, #rejTaskP{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.task{
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: #000 solid 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task h3{
+    font-weight: 900;
+}
+.task p{
+    font-size: 14px;
+    color: #666666;
+}
+.task i{
+    font-size: 36px;
+    cursor: pointer;
+}
+.task i:nth-child(1){
+    color: green;
+}
+.task i:nth-child(2){
+    color: red;
+}
+#add{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addBtn{
+    font-size: 36px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: var(--danger);
+    cursor: pointer;
+    box-shadow: 2px 2px 7px #c2c2c2;
+}
+#addBtn:hover{
+    background-color: #b53c26;
+    box-shadow: inset 1px 1px 4px #666666;
+}
+#popupBox{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#popup{
+    height: auto;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 30px;
+    border: #000 solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    padding: 20px 0;
+}
+#popup input{
+    width: 80%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 16px;
+    outline: none;
+    border: #000 solid 2px;
+}
+#popup i{
+    background-color: var(--danger);
+    color: #fff;
+    font-size: 30px;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px #c2c2c2;
+    cursor: pointer;
+}
+#popup i:hover{
+    background-color: #b53c26;
+    box-shadow: inset 1px 1px 4px #666666;
+}

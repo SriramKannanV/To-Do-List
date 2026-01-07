@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --bgcolor: #f6f6f6;
+    --success: #5594f1;
+    --danger: #f26e56;
+}
+body{
+    background-color: var(--bgcolor);
+}
+#accountIcon{
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+    border-radius: 5px;
+    align-items: center;
+    line-height: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+#accountMain{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#accountHero{
+    text-align: center;
+    margin-top: 80px;
+}
+#accountHero i{
+    transform: rotate(-30deg);
+    color: yellow;
+}
+#accountHero h3{
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#accountHero p{
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+#accountBox{
+    height: 36px;
+    width: 280px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+#accountText{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#accountText p{
+    color: #666666;
+    text-decoration: underline;
+    font-size: 12px;
+}
+#accountInput button{
+    height: 36px;
+    width: 280px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--danger);
+    transition: 200ms;
+    margin-bottom: 20px;
+}
+#accountInput button:hover{
+    background-color: #b53c26;
+    font-size: 14px;
+}
+#accountInput a{
+    color: #fff;
+    text-decoration: none;
+}
+#accountIcons{
+    margin: 20px 0;
+}
+#socialIcon{
+    height: 50px;
+    width: 90px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+}
+#accountMainP{
+    font-size: 12px;
+}
+span{
+    color: #f26e56;
+    cursor: pointer;
+}
+
+/* Index css */
