@@ -25,6 +25,6 @@ submitBtn.addEventListener("click", (e) =>{
 
     // dummy.textContent = inputText.value;
 
-    window.open("index.html", "_self")
+    window.open("/index.html", "_self")
     // console.log(inputText.value);
 });
