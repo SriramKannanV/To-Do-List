@@ -150,7 +150,7 @@ allToggle.addEventListener("click", () => {
 })
 
 logoutToggle.addEventListener("click", () => {
-    window.open("html/account.html", "_self");
+    window.open("../index.html", "_self");
 })
 
 // function saveUI(){

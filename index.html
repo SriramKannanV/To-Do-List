@@ -3,96 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List 2.0/home</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <title>To Do List 2.0/create_account</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="body">
-        <div id="details">
-            <img src="../dp.jpg" alt="Profile Image">
-            <div id="detailsInside">
-                <h3 id="nameDisplay"></h3>
-                <p>Your daily adventure satrts now</p>
+    <i id="accountIcon" class="fa-solid fa-angle-left"></i>
+    <div id="accountHero">
+        <h3>Create Account <i class="fa-solid fa-hand"></i></h3>
+        <p>Please register on our Website, where you can continue using our service.</p>
+    </div>
+    <div id="accountMain">
+        <div id="accountInput">
+            <input id="accountBox" type="text" placeholder="Enter Your Name" autocomplete="off">
+            <div id="accountText">
+                <input id="checkBtn" type="checkbox">
+                <p>I agree to privacy & policy trems</p>
             </div>
+            <button id="submitBtn"><a href="html/lists.html" target="_blank">Continue</a></button>
+            <p>or</p>
         </div>
-        <div id="toggleDiv">
-            <div id="toggleTop">
-                <div id="allToggle">
-                    <i class="fa-solid fa-wallet"></i>
-                    <div>
-                        <h3>All Task</h3>
-                        <p><span id="allCount">No</span> Tasks</p>
-                    </div>
-                </div>
-                <div id="comToggle">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <div>
-                        <h3>Completed</h3>
-                        <p><span id="comCount">No</span> Tasks</p>
-                    </div>
-                </div>
-            </div>
-            <div id="toggleBottom">
-                <div id="rejToggle">
-                    <i class="fa-solid fa-trash"></i>
-                    <div>
-                        <h3>Removed</h3>
-                        <p><span id="rejCount">No</span> Tasks</p>
-                    </div>
-                </div>
-                <div id="logoutToggle">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <div>
-                        <h3>Logout</h3>
-                    </div>
-                </div>
-            </div>
+        <div id="accountIcons">
+            <i id="socialIcon" class="fa-brands fa-google"></i>
+            <i id="socialIcon" class="fa-brands fa-apple"></i>
+            <i id="socialIcon" class="fa-brands fa-facebook-f"></i>
         </div>
-
-        <div id="taskDisplay">
-            <div id="tasksList">
-                <p id="tasksListP">Tasks</p>
-                <!-- <div  id="task">
-                    <div>
-                        <h3 id="taskTitle"></h3>
-                        <p id="taskDis"></p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-square-check"></i>
-                        <i class="fa-solid fa-square-xmark"></i>
-                    </div>
-                </div> -->
-            </div>
-
-            <div id="comTask">
-                <div id="comTaskP">Completed Tasks</div>
-            </div>
-
-            <div id="rejTask">
-                <div id="rejTaskP">Rejected Tasks</div>
-            </div>
-        </div>
-
-        <div id="add">
-            <button id="addBtn">
-                <i class="fa-solid fa-plus"></i>
-            </button>
-        </div>
+        <p id="accountMainP">Already have an account? <span>Signin instead</span></p>
     </div>
 
-    <!-- Pop up -->
-    <div id="popupBox">
-        <form id="popup">
-            <input id="getTitle" type="text" placeholder="Task" autocomplete="off">
-            <input id="getDis" type="text" placeholder="Description" autocomplete="off">
-            <i id="submitBtn" class="fa-solid fa-plus"></i>
-        </form>
-    </div>
-
-    <script src="/js/index.js"></script>
+    <script src="js/account.js"></script>
 </body>
 </html>
